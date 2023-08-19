@@ -1,0 +1,20 @@
+anchors:
+  10-MPI: &10-MPI engine_10_MPI
+  auto: &auto gearbox_auto
+  hella: &hella headlights_hella
+cars:
+- Car_model: skoda_citigo
+  engine: *10-MPI
+  gearbox: *auto
+  headlights: bosch
+  dashboard: budget
+- Car_model: VW_up
+  engine: *10-MPI
+  gearbox: *auto
+  headlights: *hella
+  dashboard: classic
+- Car_model: Seat_mii
+  engine: *10-MPI
+  gearbox: manual
+  headlights: *hella
+  dashboard: youngster
