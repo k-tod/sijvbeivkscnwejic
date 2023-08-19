@@ -1,0 +1,6 @@
+<car_model name="Seat_mii">
+  <engine>engine_10_MPI</engine>
+  <gearbox>manual</gearbox>
+  <headlights>headlights_hella</headlights>
+  <dashboard>youngster</dashboard>
+</car_model>

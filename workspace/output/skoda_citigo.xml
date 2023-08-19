@@ -1,0 +1,6 @@
+<car_model name="skoda_citigo">
+  <engine>engine_10_MPI</engine>
+  <gearbox>gearbox_auto</gearbox>
+  <headlights>bosch</headlights>
+  <dashboard>budget</dashboard>
+</car_model>

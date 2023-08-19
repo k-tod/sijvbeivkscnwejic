@@ -1,0 +1,6 @@
+<car_model name="VW_up">
+  <engine>engine_10_MPI</engine>
+  <gearbox>gearbox_auto</gearbox>
+  <headlights>headlights_hella</headlights>
+  <dashboard>classic</dashboard>
+</car_model>
