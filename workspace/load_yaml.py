@@ -7,24 +7,22 @@ component_dict = {}
 def load_yaml(file_path):
     with open(file_path, 'r') as file:
         data = yaml.safe_load(file)
-        print(data)
-    car_data = data['cars']
-    car_models = []
-    for model in car_data:
-        engine = component_dict.get(model['engine'], CarComponent(model['engine']))
-        component_dict[model['engine']] = engine
-        
-        gearbox = component_dict.get(model['gearbox'], CarComponent(model['gearbox']))
-        component_dict[model['gearbox']] = gearbox
-        
-        headlights = component_dict.get(model['headlights'], CarComponent(model['headlights']))
-        component_dict[model['headlights']] = headlights
-        
-        dashboard = component_dict.get(model['dashboard'], CarComponent(model['dashboard']))
-        component_dict[model['dashboard']] = dashboard
-        
-        car = CarModel(name=model['Car_model'], engine=engine, gearbox=gearbox, headlights=headlights, dashboard=dashboard)
-        car_models.append(car)
-    return car_models
 
+    # Get the root key and its associated data
+    root_key, products_data = list(data.items())[0]
 
+    products = []
+    for product_data in products_data:
+        if isinstance(product_data, dict):  # Ensure product_data is a dictionary
+            product_name_key = next(iter(product_data))  # Get the first key as the product name key
+            product_name = product_data[product_name_key]
+            
+            components = {}
+            for key, value in product_data.items():
+                if key != product_name_key:  # Exclude the product name from the components
+                    component = component_dict.get(value, CarComponent(value))
+                    component_dict[value] = component
+                    components[key] = component
+            product = CarModel(name=product_name, **components)
+            products.append(product)
+    return products
