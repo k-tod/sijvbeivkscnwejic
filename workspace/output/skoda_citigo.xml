@@ -1,6 +1,6 @@
 <car_model name="skoda_citigo">
-  <engine>engine_10_MPI</engine>
-  <gearbox>gearbox_auto</gearbox>
-  <headlights>bosch</headlights>
-  <dashboard>budget</dashboard>
+  <engine>8e91e269-01cf-4743-90f0-ed08582a1ea1</engine>
+  <gearbox>5bbfd1e5-a60c-40cd-ae54-fdd06ffe9f2b</gearbox>
+  <headlights>fed78ebb-1548-4990-aa68-3cb7e2c08172</headlights>
+  <dashboard>84878a4e-d2a6-4a76-b68f-89c70fa44a56</dashboard>
 </car_model>

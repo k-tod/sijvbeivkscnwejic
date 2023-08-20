@@ -1,6 +1,6 @@
 <car_model name="Seat_mii">
-  <engine>engine_10_MPI</engine>
-  <gearbox>manual</gearbox>
-  <headlights>headlights_hella</headlights>
-  <dashboard>youngster</dashboard>
+  <engine>8e91e269-01cf-4743-90f0-ed08582a1ea1</engine>
+  <gearbox>7b243fb9-8006-4d37-a05f-3c7f305b7e32</gearbox>
+  <headlights>a0ac3136-b7c3-45f3-a78e-94dcd7ba97ec</headlights>
+  <dashboard>7ec2f71d-ee69-436e-83b6-d7a89f76fbf6</dashboard>
 </car_model>

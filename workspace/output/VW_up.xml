@@ -1,6 +1,6 @@
 <car_model name="VW_up">
-  <engine>engine_10_MPI</engine>
-  <gearbox>gearbox_auto</gearbox>
-  <headlights>headlights_hella</headlights>
-  <dashboard>classic</dashboard>
+  <engine>8e91e269-01cf-4743-90f0-ed08582a1ea1</engine>
+  <gearbox>5bbfd1e5-a60c-40cd-ae54-fdd06ffe9f2b</gearbox>
+  <headlights>a0ac3136-b7c3-45f3-a78e-94dcd7ba97ec</headlights>
+  <dashboard>a77b3cab-4bac-4cb3-a1b8-dfb5412498ac</dashboard>
 </car_model>
